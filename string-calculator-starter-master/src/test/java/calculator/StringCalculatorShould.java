@@ -41,6 +41,6 @@ class StringCalculatorShould {
           assertEquals(6, stringCalculator.add("1,2000,5"));
     }
     
-
+   
     
 }
