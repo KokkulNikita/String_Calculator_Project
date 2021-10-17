@@ -25,4 +25,9 @@ class StringCalculatorShould {
           assertEquals(3, stringCalculator.add("1,2"));
     }
     
+    @Test
+    public  void two_Numbers_NewLine_Delimited_Return_Sum() {
+          assertEquals(3, stringCalculator.add("1\n2"));
+    }
+    
 }

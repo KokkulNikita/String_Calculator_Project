@@ -1,9 +1,11 @@
 package calculator;
 
 class StringCalculator {
+	
+	private final String delimiter =",|\n" ;
 
     public int add(String input) {
-    	String[] numbers =input.split(",");
+    	String[] numbers =input.split(delimiter);
     	
     	if(isEmpty(input)) {
     		  return 0;
