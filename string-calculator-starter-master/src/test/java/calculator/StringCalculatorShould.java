@@ -22,12 +22,17 @@ class StringCalculatorShould {
     
     @Test
     public  void two_Numbers_Comma_Delimited_Return_Sum() {
-          assertEquals(3, stringCalculator.add("1,2"));
+          assertEquals(4, stringCalculator.add("2,2"));
     }
     
     @Test
     public  void two_Numbers_NewLine_Delimited_Return_Sum() {
-          assertEquals(3, stringCalculator.add("1\n2"));
+          assertEquals(6, stringCalculator.add("1\n5"));
+    }
+    
+    @Test
+    public  void three_Numbers_Delimited_Return_Sum() {
+          assertEquals(8, stringCalculator.add("1,2,5"));
     }
     
 }

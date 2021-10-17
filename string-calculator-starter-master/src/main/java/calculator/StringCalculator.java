@@ -15,12 +15,16 @@ class StringCalculator {
     		return stringToInt(input);
     	}
     	else {
-    		return sum(numbers[0],numbers[1]);
+    		return sum(numbers);
     	}
     }
     
-    private int sum(String num1 ,String num2) {
-    	return stringToInt(num1)+stringToInt(num2);
+    private int sum(String[] numbers) {
+    	int addition=0;
+    	for(int i=0;i<numbers.length;i++) {
+    	addition=addition+ stringToInt(numbers[i]);
+    	}
+    	return addition;
     }
     
     private boolean isEmpty(String input) {
