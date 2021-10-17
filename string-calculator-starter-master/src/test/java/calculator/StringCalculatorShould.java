@@ -19,4 +19,10 @@ class StringCalculatorShould {
     void string_with_single_number_should_return_number_as_int() {
           assertEquals(1, stringCalculator.add("1"));
     }
+    
+    @Test
+    public  void two_Numbers_Comma_Delimited_Return_Sum() {
+          assertEquals(3, stringCalculator.add("1,2"));
+    }
+    
 }
