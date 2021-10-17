@@ -13,8 +13,12 @@ class StringCalculator {
     		return stringToInt(input);
     	}
     	else {
-    		return stringToInt(numbers[0])+stringToInt(numbers[1]);
+    		return sum(numbers[0],numbers[1]);
     	}
+    }
+    
+    private int sum(String num1 ,String num2) {
+    	return stringToInt(num1)+stringToInt(num2);
     }
     
     private boolean isEmpty(String input) {
