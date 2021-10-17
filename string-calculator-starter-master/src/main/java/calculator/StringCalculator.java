@@ -21,8 +21,11 @@ class StringCalculator {
     
     private int sum(String[] numbers) {
     	int addition=0;
-    	for(int i=0;i<numbers.length;i++) {
-    	addition=addition+ stringToInt(numbers[i]);
+    	for(String current:numbers) {
+    		if(stringToInt(current)>1000) {
+    			continue;
+    		}
+    	addition=addition+ stringToInt(current);
     	}
     	return addition;
     }

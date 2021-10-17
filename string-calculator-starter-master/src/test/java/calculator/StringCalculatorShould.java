@@ -1,6 +1,7 @@
 package calculator;
 
 import org.junit.jupiter.api.Test;
+ import org.junit.jupiter.api.Assertions;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,5 +35,16 @@ class StringCalculatorShould {
     public  void three_Numbers_Delimited_Return_Sum() {
           assertEquals(8, stringCalculator.add("1,2,5"));
     }
+    
+    @Test
+    public  void GreaterThan_1000_Ignore() {
+          assertEquals(6, stringCalculator.add("1,2000,5"));
+    }
+    
+//    @Test(expected =Exception.class)
+//    	public void negative_Input_Returns_Exception() {
+//    	stringCalculator.add("-1");
+//    }
+    
     
 }
